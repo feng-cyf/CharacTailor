@@ -24,7 +24,7 @@
 ## 4. 系统架构截图
 
 1. **主界面截图** - 展示系统整体架构和服务状态
-<img width="2559" height="1418" alt="image" src="https://github.com/user-attachments/assets/ebf8f15f-3737-4474-9e88-f8bba44b53c0" />
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/17b62173-4ade-43d4-af05-ad9ba6bd2544" />
 
 2. **人设管理界面** - 角色创建和配置界面
 <img width="2557" height="1475" alt="image" src="https://github.com/user-attachments/assets/a62d0bf6-0225-4317-8d47-df4b4d3cc17f" />
