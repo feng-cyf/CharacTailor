@@ -69,7 +69,6 @@ class TenCent:
             audio_data = self.tts_connect()
             with open(self.path, "wb") as f:
                 f.write(audio_data)
-            # 可选：返回文件大小，保持之前的用法
             return os.path.getsize(self.path)
         except Exception as e:
             print(f"TTS生成失败：{e}")
