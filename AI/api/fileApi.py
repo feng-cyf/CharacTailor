@@ -22,7 +22,7 @@ from starlette.responses import FileResponse
 from AIModel.TenCent import TenCent
 from database.raw_mysql import get_raw_pool
 
-
+load_dotenv("./database.env")
 class FileType(Enum):
     IMAGE = "image"
     VIDEO = "video"
@@ -56,7 +56,7 @@ class UploadedFiles:
     def __init__(self):
         self.base_url = "http://localhost:8000"
         self.PASSWORD = "AICHATGETFILE"
-        self.UPLOAD_URL = "http://39.102.103.117:9000/upload"
+        self.UPLOAD_URL = os.getenv("cloud_url")
         self.FRAME_QUALITY = 90
         self.SECONDS_PER_FRAME = 1.0  # 每秒1帧
         self.LAYOUT = "horizontal"
