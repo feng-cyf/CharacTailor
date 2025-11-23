@@ -361,3 +361,143 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# -----------------------------
+# 额外：缓存与敏感信息（新增）
+# -----------------------------
+
+# Environment files (常见的包含密钥/凭据的环境文件)
+.env
+.env.*
+.env.local
+.env.*.local
+.envrc
+.local.env
+
+# Secrets files
+secrets.json
+secrets.*.json
+appsettings*.Secrets.json
+local.settings.json
+
+# Generic credential / key files
+credentials.json
+*-credentials.json
+*-key.json
+*.service-account.json
+*.gcp.json
+*.gcloud.json
+
+# SSH keys and certificates
+id_rsa
+id_rsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+*.pem
+*.key
+*.cer
+*.crt
+*.der
+*.p12
+*.pfx
+
+# Cloud CLI / SDK state & credentials
+.azure/
+.azureprofile
+.azure/
+/.aws/
+.aws/*
+.gcloud/
+.gcloud/*
+gcloud/
+gcloud/*
+
+# Database files (本地数据库文件、缓存)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*-wal
+*-shm
+
+# Python virtualenv / caches
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.pyc
+.python-version
+pip-wheel-metadata/
+.pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+
+# Node / frontend caches & logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnp.*
+.pnpm-store/
+.pnpm-debug.log*
+node_releases/
+.cache/
+dist/
+build/
+wwwroot/
+
+# Package / wheel / egg artifacts
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDEs and editor folders (可能包含工作区凭据或个人配置)
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+
+# System files and misc temp
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.bak
+*~.swp
+
+# Log files (额外保证所有日志不被提交)
+*.log
+logs/
+log/
+
+# OS and container credentials
+.netrc
+.htpasswd
+docker-compose.override.yml
+
+# Other common sensitive filenames
+credentials
+private.key
+private.pem
+secret
+passwd
+secrets
+
+# Coverage / test artifacts
+coverage/
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+*.coveragexml
+
+# End of .gitignore
