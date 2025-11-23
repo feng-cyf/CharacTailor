@@ -363,10 +363,10 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # -----------------------------
-# ¶îÍâ£º»º´æÓëÃô¸ÐÐÅÏ¢£¨ÐÂÔö£©
+# ï¿½ï¿½ï¿½â£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 # -----------------------------
 
-# Environment files (³£¼ûµÄ°üº¬ÃÜÔ¿/Æ¾¾ÝµÄ»·¾³ÎÄ¼þ)
+# Environment files (ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿/Æ¾ï¿½ÝµÄ»ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½)
 .env
 .env.*
 .env.local
@@ -414,7 +414,7 @@ id_ed25519.pub
 gcloud/
 gcloud/*
 
-# Database files (±¾µØÊý¾Ý¿âÎÄ¼þ¡¢»º´æ)
+# Database files (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 *.sqlite
 *.sqlite3
 *.db
@@ -456,7 +456,7 @@ wwwroot/
 .eggs/
 pip-wheel-metadata/
 
-# IDEs and editor folders (¿ÉÄÜ°üº¬¹¤×÷ÇøÆ¾¾Ý»ò¸öÈËÅäÖÃ)
+# IDEs and editor folders (ï¿½ï¿½ï¿½Ü°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¾ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 .vscode/
 *.code-workspace
 .idea/
@@ -474,7 +474,7 @@ desktop.ini
 *.bak
 *~.swp
 
-# Log files (¶îÍâ±£Ö¤ËùÓÐÈÕÖ¾²»±»Ìá½»)
+# Log files (ï¿½ï¿½ï¿½â±£Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½á½»)
 *.log
 logs/
 log/
@@ -499,5 +499,29 @@ coverage*.xml
 coverage*.info
 *.coverage
 *.coveragexml
+
+# AI specific directories
+AI/LoadModels/
+AI/UploadedFiles/
+AI/message/
+AI/AIPratice/*.csv
+AI/LoadModelData/
+AI/SceneImage/
+AI/apiKey.env
+AI/database.env
+
+# AiGame configuration files
+AiGame/AiGame/appsettings.json
+
+# Compile output directories
+**/bin/
+**/obj/
+**/out/
+**/dist/
+
+# Temporary files and caches
+**/tmp/
+**/temp/
+**/.cache/
 
 # End of .gitignore
