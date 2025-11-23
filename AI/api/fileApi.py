@@ -182,7 +182,6 @@ class UploadedFiles:
                 file=(file_name, contents, file.content_type)
             )
 
-        # 你的原始返回结果（无任何新增/修改字段！）
         return {
             "code": 200,
             "message": "上传成功",
