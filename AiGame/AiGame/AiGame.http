@@ -1,0 +1,6 @@
+@AiGame_HostAddress = http://localhost:5032
+
+GET {{AiGame_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
